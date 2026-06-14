@@ -1,0 +1,19 @@
+Parametri di Simulazione per segregated_realSW_p0.15_dev1.rds
+----------------------------------------------------------------
+
+Soglia di Tolleranza/Stress (F_th): 0.5 (gli agenti richiedono almeno il 50% di vicini simili)
+
+Modello di Rete: Watts-Strogatz Small-World standard (sample_smallworld)
+  - Dimensioni griglia: 20 x 20 (N = 400 nodi totali)
+  - Grado/Vicini base (nei): 1 (4 vicini cardinali in media sulla griglia prima del rewiring)
+  - Probabilità di rewiring (p): 0.15 (15% di link riscritti globalmente)
+  - Condizioni al contorno: Standard (griglia non periodica)
+
+Popolazione del sistema:
+  - Densità nodi vuoti (holes): 10% (40 nodi vuoti)
+  - Densità agenti tipo +1 (blu): 45% (180 agenti)
+  - Densità agenti tipo -1 (rossi): 45% (180 agenti)
+
+Configurazione e Risultato finale:
+  - Passi massimi di simulazione: 5000
+  - Numero finale di cluster: 3 (1 macro-cluster blu da 180, 1 macro-cluster rosso da 179, e 1 singolo agente isolato da 1)
